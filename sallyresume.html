@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React Hello World</title>
+</head>
+<body>
+  <div id="application-root"></div>
+
+<script
+  src="https://unpkg.com/react@16/umd/react.development.js">
+</script>
+<script
+  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+</script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<script type="text/babel">
+  function App() {
+  return <main>
+    <header>
+    <h1>Sally Student's Resume</h1>
+    <h2>Contact Me:</h2>
+    <address>
+      Email:<a href="mailto:sally@sallystudent.com?"> sally@sallystudent.com</a>
+      Phone:<a href="tel:1-305-515-1155">+13055151155</a>
+      <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="Sally Student Headshot" style={ {"width":"50px", "height":"100px"} }></img>
+    </address>
+    </header>
+      <h2>Skills:</h2>
+      <ul>
+        <li>CSS</li>
+        <li>HTML</li>
+        </ul>
+      <section>
+      <h2>Employment History:</h2>
+      <h3>Apple Inc</h3>
+      <p>Sales: March 2017 - March 2018</p>
+      <ul>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li></ul>
+      <h3>Bloomingdales</h3>
+      <p>Sales: April 2016 - April 2017</p>
+      <ul>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+      </ul></section>
+      <section>
+        <h2>Education</h2>
+        <h3>Awesome University</h3>
+          <p>Graduated with Honors Diploma.</p>
+          </section>
+          </main>
+}
+
+ReactDOM.render(
+  <App />,
+  document.querySelector('#application-root')
+);
+      
+
+</script>
+</body>
+</html>
